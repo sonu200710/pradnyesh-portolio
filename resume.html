@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Pradnyesh Mistari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #00d4ff;
+            padding-bottom: 20px;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0a0a0a;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .contact-item i {
+            color: #00d4ff;
+            font-size: 1.2rem;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0a0a0a;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #667eea, #00d4ff);
+            border-radius: 2px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .item-subtitle {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .item-date {
+            color: #00d4ff;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .item-desc {
+            color: #555;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #00d4ff;
+        }
+
+        .projects {
+            display: grid;
+            gap: 15px;
+        }
+
+        .project-item {
+            border-left: 3px solid #667eea;
+            padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .resume-container {
+                padding: 20px;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        .print-btn {
+            background: #00d4ff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .print-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,212,255,0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <button class="print-btn" onclick="window.print()">📄 Print Resume</button>
+        
+        <div class="header">
+            <h1 class="name">Pradnyesh Mistari</h1>
+            <div class="title">Full Stack Web & App Developer | Diploma CSE Post Graduate</div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+919373779593">+91 9373779593</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:mistaripradnyesh@gmail.com">mistaripradnyesh@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/mistaripradnyesh" target="_blank">github.com/mistaripradnyesh</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/pradnyesh-mistari" target="_blank">linkedin.com/in/pradnyesh-mistari</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📚 Education</h2>
+            <div class="item">
+                <div class="item-title">Diploma in Computer Science Engineering (Post Graduate)</div>
+                <div class="item-subtitle">R.C Patel College of Engineering and Polytechnic, Shirpur</div>
+                <div class="item-date">2023 - 2026</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">💻 Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="item-title">Frontend</div>
+                    <span>HTML/CSS (95%) • JavaScript (85%) • React (80%)</span>
+                </div>
+                <div class="skill-item">
+                    <div class="item-title">Backend</div>
+                    <span>Node.js (80%) • MongoDB (75%) • MySQL (70%) • Firebase (80%)</span>
+                </div>
+                <div class="skill-item">
+                    <div class="item-title">Mobile</div>
+                    <span>Android Studio • Java/Kotlin • Firebase</span>
+                </div>
+                <div class="skill-item">
+                    <div class="item-title">Tools</div>
+                    <span>Git • VS Code • Figma • Postman</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📱 Projects</h2>
+            <div class="projects">
+                <div class="project-item">
+                    <div class="item-title">🏠 Home Rental Mobile App</div>
+                    <div class="item-desc">Native Android app with Firebase backend, push notifications, user authentication, and property management features. APK: <a href="https://homerental-app-download-apk.tiiny.site" target="_blank">Download</a></div>
+                    <div class="item-date">2024</div>
+                </div>
+                <div class="project-item">
+                    <div class="item-title">💼 Personal Portfolio Website</div>
+                    <div class="item-desc">Modern responsive portfolio with animations, typing effects, skill progress bars, and contact form validation.</div>
+                    <div class="item-date">2024</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🎯 Objective</h2>
+            <div class="item-desc">
+                Passionate Computer Science Diploma student. <strong>Completed internship at IT Innovation Hub Services Pvt Ltd, Nashik.</strong> Eager to apply full-stack development skills in real-world projects and contribute to innovative teams while continuously learning and growing as a developer.
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📄 Original PDF Resume</h2>
+            <p>View or download the original PDF version of my resume:</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="resume.pdf" target="_blank" class="print-btn" style="display: inline-block; text-decoration: none;">📄 Open PDF Resume</a>
+                <iframe src="resume.pdf" width="100%" height="600px" style="border: 1px solid #ddd; border-radius: 8px; margin-top: 20px;"></iframe>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🔧 Key Projects</h2>
+            <div class="projects">
+                <div class="project-item">
+                    <div class="item-title">Home Rental App</div>
+                    <div class="item-desc">Complete Android app with real estate features including property listing, booking system, admin panel, and Firebase integration.</div>
+                </div>
+                <div class="project-item">
+                    <div class="item-title">Portfolio Website</div>
+                    <div class="item-desc">Responsive single-page application with modern animations, contact form validation, and optimized performance.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Auto print on load
+        window.onload = function() {
+            window.print();
+        };
+    </script>
+</head>
+</html>
